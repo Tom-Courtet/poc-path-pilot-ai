@@ -1,0 +1,90 @@
+{
+    "name": "Voyage à Barcelone",
+    "tripType": "couple",
+    "tripGoal": "cheapest",
+    "numberOfPeople": 2,
+    "departurePoint": {
+        "name": "Paris",
+        "country": "France",
+        "latitude": 48.8566,
+        "longitude": 2.3522
+    },
+    "returnPoint": {
+        "name": "Barcelone",
+        "country": "Espagne",
+        "latitude": 41.3851,
+        "longitude": 2.1734
+    },
+    "preferences": {
+        "sharedExpensesTracking": true,
+        "activityLevel": "medium",
+        "dietaryPreference": "végétarien",
+        "reducedMobility": false,
+        "travelWithChildren": false,
+        "children": [],
+        "spokenLanguages": [
+            "français",
+            "anglais",
+            "espagnol"
+        ],
+        "ecologicalPreference": true
+    },
+    "budget": "2000 €",
+    "availableLodgings": [
+        {
+            "lodgingId": "lodging-001",
+            "destinationId": "barcelone-centre",
+            "checkInDate": "2026-02-15T14:00:00.000Z",
+            "checkOutDate": "2026-02-20T11:00:00.000Z",
+            "price": "450 €"
+        },
+        {
+            "lodgingId": "lodging-002",
+            "destinationId": "barcelone-plage",
+            "checkInDate": "2026-02-15T15:00:00.000Z",
+            "checkOutDate": "2026-02-20T10:00:00.000Z",
+            "price": "680 €"
+        },
+        {
+            "lodgingId": "lodging-003",
+            "destinationId": "barcelone-gothique",
+            "checkInDate": "2026-02-15T16:00:00.000Z",
+            "checkOutDate": "2026-02-20T12:00:00.000Z",
+            "price": "320 €"
+        }
+    ],
+    "availableTransports": [
+        {
+            "id": "transport-001",
+            "type": "avion",
+            "departureHour": "06:30",
+            "arrivalHour": "08:15",
+            "price": "180 €",
+            "company": "Vueling"
+        },
+        {
+            "id": "transport-002",
+            "type": "avion",
+            "departureHour": "14:00",
+            "arrivalHour": "15:45",
+            "price": "240 €",
+            "company": "Air France"
+        },
+        {
+            "id": "transport-003",
+            "type": "train",
+            "departureHour": "07:00",
+            "arrivalHour": "13:30",
+            "price": "120 €",
+            "company": "SNCF/Renfe"
+        },
+        {
+            "id": "transport-004",
+            "type": "bus",
+            "departureHour": "22:00",
+            "arrivalHour": "08:00",
+            "price": "45 €",
+            "company": "FlixBus"
+        }
+    ]
+}
