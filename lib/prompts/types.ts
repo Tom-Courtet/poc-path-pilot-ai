@@ -23,18 +23,38 @@ export interface Preferences {
 }
 
 export interface Lodging {
-    lodgingId: string;
-    destinationId: string;
-    checkInDate: string;
-    checkOutDate: string;
-    price: string;
+    $id: string;
+    $collectionId?: string;
+    $createdAt?: string;
+    $databaseId?: string;
+    $updatedAt?: string;
+    $permissions?: string[];
+    $sequence?: number;
+    lodgingName: string;
+    location: string;
+    pricePerNight: number;
+    numberOfGuests: number;
+    numberOfRooms: number;
+    photo_url?: string;
+    wifi?: boolean;
+    tv?: boolean;
+    clim?: boolean;
+    fumeur?: boolean;
 }
 
 export interface Transport {
-    id: string;
+    $id: string;
+    $collectionId?: string;
+    $createdAt?: string;
+    $databaseId?: string;
+    $updatedAt?: string;
+    $permissions?: string[];
+    $sequence?: number;
     type: string;
     departureHour: string;
     arrivalHour: string;
+    departureLocation: string;
+    arrivalLocation: string;
     price: string;
     company: string;
 }
@@ -46,21 +66,20 @@ export interface TripRequest {
     departurePoint: Location;
     returnPoint: Location;
     preferences: Preferences;
-    availableLodgings: Lodging[];
-    availableTransports: Transport[];
+    availableLodgings?: Lodging[];
+    availableTransports?: Transport[];
     budget: string;
     tripGoal: "cheapest" | "most_places";
 }
 
 export interface SelectedTransport {
-    id: string;
+    $id: string;
     departureDate: string;
 }
 
 export interface SelectedLodging {
-    lodgingId: string;
-    checkInDate: string;
-    checkOutDate: string;
+    $id: string;
+    numberOfNights: number;
 }
 
 export interface TripSelectionResponse {
